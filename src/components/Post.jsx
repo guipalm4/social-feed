@@ -1,3 +1,4 @@
+import { Placeholder } from 'phosphor-react'
 import styles from './Post.module.css'
 
 export function Post() {
@@ -24,6 +25,17 @@ export function Post() {
         <a href=""> #nlw</a> 
         <a href=""> #rocketseat</a></p>
       </div>
+
+      <form className={styles.commentForm}>
+        <strong>Deixe seu Feedback</strong>
+        <textarea
+          placeholder='Deixe um comentário'
+        />
+        <footer>
+          <button type='submit'>Publicar</button>
+        </footer>
+        
+      </form>
 
     </article>
   )
